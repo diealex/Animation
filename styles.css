@@ -1,0 +1,450 @@
+@font-face {
+  font-family: SuisseIntl-Regular;
+  src: url(SuisseIntl-Regular.otf);
+}
+
+@font-face {
+  font-family: SuisseIntl-Book;
+  src: url(SuisseIntl-Book.otf);
+}
+
+@font-face {
+  font-family: SuisseIntl-SemiBold;
+  src: url(SuisseIntl-SemiBold-WebM.woff);
+}
+
+html {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+  background: #475478;
+}
+
+p {
+  font-family: SuisseIntl-Regular;
+}
+
+img {
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+  cursor: pointer;
+  fill: white;
+  position: relative;
+  float: right;
+  z-index: 9;
+}
+
+.ellips_2 {
+  fill: #475478;
+  stroke: white;
+  stroke-width: 12px;
+}
+
+.ellips_3 {
+  stroke: #f07a66;
+}
+
+.ellips_1 {
+  stroke: #5da7e5;
+}
+
+.rect-solution {
+  fill: #f07a66;
+  cursor: pointer;
+  transform-origin: 0 19px;
+  transform: translate(-30px, 0);
+  font-size: 176px;
+}
+
+.group1 {
+  transform: translate(443px, 564px) rotate(0deg);
+  transform-origin: 0 19px;
+}
+
+.label2 {
+  fill: #ffffff;
+}
+
+.group2 {
+  transform: translate(395px, 259px) rotate(0deg);
+  transform-origin: 0 19px;
+}
+
+.rectIntegration-base {
+  fill: #ffffff;
+  cursor: pointer;
+  transform-origin: 0 19px;
+  transform: translate(-30px, 0);
+  font-size: 200px;
+}
+
+.label3 {
+  fill: #5da7e5;
+  cursor: pointer;
+  transform-origin: 0 19px;
+  transform: translate(-20px, 0);
+  font-size: 140px;
+}
+
+.text3 {
+  fill: white;
+  stroke-width: 0px;
+  pointer-events: none;
+}
+
+.group3 {
+  transform: translate(358px, 334px) rotate(0deg);
+  transform-origin: 0 19px;
+}
+
+.basic-open-animate {
+  pointer-events: none;
+  animation-name: basic_init_rotate;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.basic-open-animate text,
+.integration-open-animate text,
+.solution-open-animate text {
+  animation-delay: 4.2s;
+  animation-name: basic_main_text_hide;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.basic-open-animate rect {
+  animation-delay: 4.2s, 4.9s;
+  animation-name: basic_main_rect_scale, basic_main_rect_expand;
+  animation-duration: 0.7s, 0.3s;
+  animation-iteration-count: 1, 1;
+  animation-timing-function: linear, linear;
+  animation-fill-mode: forwards, forwards;
+}
+
+.basic-close-animate {
+  transform: translate(310px, 381px) rotate(-360deg) translate(68px);
+}
+
+.basic-close-animate text {
+  opacity: 0;
+}
+
+.basic-close-animate rect {
+  animation-delay: 1s;
+  animation-name: basic_main_rect_constrict;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  transform: translate(-20px, 0) scaleY(0.25);
+  font-size: 365px;
+  animation-fill-mode: forwards;
+}
+
+.integration-open-animate {
+  pointer-events: none;
+  animation-name: integration_rotate;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.integration-open-animate rect {
+  animation-delay: 4.2s, 4.9s;
+  animation-name: integration_rect_scale, integration_main_rect_expand;
+  animation-duration: 0.7s, 0.3s;
+  animation-iteration-count: 1, 1;
+  animation-timing-function: linear, linear;
+  animation-fill-mode: forwards, forwards;
+}
+
+.integration-close-animate {
+  transform: translate(310px, 381px) rotate(-360deg) translate(148px);
+}
+
+.integration-close-animate text {
+  opacity: 0;
+}
+
+.integration-close-animate rect {
+  animation-delay: 1s;
+  animation-name: integration_main_rect_constrict;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  transform: translate(-30px, 0) scaleY(0.25);
+  font-size: 295px;
+  animation-fill-mode: forwards;
+}
+
+.solution-open-animate {
+  pointer-events: none;
+  animation-name: solution_rotate;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.solution-open-animate rect {
+  animation-delay: 4.2s, 4.9s;
+  animation-name: integration_rect_scale, solution_main_rect_expand;
+  animation-duration: 0.7s, 0.3s;
+  animation-iteration-count: 1, 1;
+  animation-timing-function: linear, linear;
+  animation-fill-mode: forwards, forwards;
+}
+
+.solution-close-animate {
+  transform: translate(310px, 381px) rotate(360deg) translate(228px);
+}
+
+.solution-close-animate text {
+  opacity: 0;
+}
+
+.solution-close-animate rect {
+  animation-delay: 1s;
+  animation-name: solution_main_rect_constrict;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  transform: translate(-30px, 0) scaleY(0.25);
+  font-size: 215px;
+  animation-fill-mode: forwards;
+}
+
+.desc-animate-show {
+  animation-delay: 5.2s;
+  animation-name: basic_desc_show;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.desc-animate-show * {
+  animation-delay: 5.8s;
+  animation-name: elem_show;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.desc-animate-hide {
+  opacity: 1;
+  animation-delay: none;
+  animation-name: basic_desc_hide_a;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.desc-animate-hide * {
+  animation-name: elem_hide;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.animate-show {
+  animation-name: elem_show;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.animate-hide {
+  animation-name: elem_hide;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes basic_desc_show {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    clip-path: inset(0 101% 0 0);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    clip-path: inset(0 -1% 0 -1%);
+  }
+}
+
+@keyframes basic_desc_hide_a {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    clip-path: inset(0 -1% 0 -1%);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    clip-path: inset(0 101% 0 0);
+  }
+}
+
+@keyframes elem_show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: unset;
+  }
+}
+
+@keyframes elem_hide {
+  0% {
+    opacity: 1;
+    pointer-events: none;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes basic_main_rect_scale {
+  0% {
+    transform: translate(-20px, 0) scaleY(1);
+  }
+  100% {
+    transform: translate(-20px, 0) scaleY(0.25);
+  }
+}
+
+@keyframes basic_main_rect_expand {
+  0% {
+    font-size: 140px;
+  }
+  100% {
+    font-size: 365px;
+  }
+}
+
+@keyframes basic_main_rect_constrict {
+  0% {
+    font-size: 365px;
+  }
+  100% {
+    font-size: 0px;
+  }
+}
+
+@keyframes basic_main_text_hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes basic_init_rotate {
+  0% {
+    transform: translate(358px, 334px) rotate(0deg);
+  }
+  12.499% {
+    transform: translate(358px, 334px) rotate(-45deg);
+  }
+  12.5% {
+    transform: translate(310px, 381px) rotate(-45deg) translate(68px);
+  }
+  100% {
+    transform: translate(310px, 381px) rotate(-360deg) translate(68px);
+  }
+}
+
+@keyframes integration_rotate {
+  0% {
+    transform: translate(395px, 259px) rotate(0deg);
+  }
+  7.999% {
+    transform: translate(395px, 259px) rotate(-55deg);
+  }
+  8% {
+    transform: translate(310px, 381px) rotate(-55deg) translate(148px);
+  }
+  100% {
+    transform: translate(310px, 381px) rotate(-360deg) translate(148px);
+  }
+}
+
+@keyframes solution_rotate {
+  0% {
+    transform: translate(443px, 564px) rotate(0deg);
+  }
+  7.999% {
+    transform: translate(443px, 564px) rotate(54deg);
+  }
+  8% {
+    transform: translate(310px, 381px) rotate(54deg) translate(228px);
+  }
+  100% {
+    transform: translate(310px, 381px) rotate(360deg) translate(228px);
+  }
+}
+
+@keyframes integration_rect_scale {
+  0% {
+    transform: translate(-30px, 0) scaleY(1);
+  }
+  100% {
+    transform: translate(-30px, 0) scaleY(0.25);
+  }
+}
+
+@keyframes integration_main_rect_expand {
+  0% {
+    font-size: 200px;
+  }
+  100% {
+    font-size: 295px;
+  }
+}
+
+@keyframes integration_main_rect_constrict {
+  0% {
+    font-size: 295px;
+  }
+  100% {
+    font-size: 0px;
+  }
+}
+
+@keyframes solution_main_rect_expand {
+  0% {
+    font-size: 176px;
+  }
+  100% {
+    font-size: 215px;
+  }
+}
+
+@keyframes solution_main_rect_constrict {
+  0% {
+    font-size: 215px;
+  }
+  100% {
+    font-size: 0px;
+  }
+}

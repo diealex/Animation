@@ -2,8 +2,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="OkoBasic.css">
-    <script src="OkoBasic.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -15,31 +15,31 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-90 0 810 800"
                 xml:space="preserve">
 
-                <g id="grpOkoSolution" data-name="Group OkoSolution" class="group1">
-                    <rect onclick="openInfo(event)" onanimationend="onRectAnimationEnd(event)" class="rect-oko-solution"
+                <g id="grpSolution" data-name="Group Solution" class="group1">
+                    <rect onclick="openInfo(event)" onanimationend="onRectAnimationEnd(event)" class="rect-solution"
                         width="1em" height="38" rx="6" />
                     <text transform="translate(17 26)"
                         style="font-size: 20px; font-family: SuisseIntl-SemiBold; pointer-events: none; fill: white">First
                         Title</text>
                 </g>
 
-                <g id="Ellipse_OkoSolution" data-name="Ellipse OkoSolution" class="ellips_2">
+                <g id="Ellipse_Solution" data-name="Ellipse Solution" class="ellips_2">
                     <circle class="ellips_3" cx="310" cy="400" r="228" />
                 </g>
 
-                <g id="grpOkoIntegration" class="group2" data-name="Group OkoIntegration">
+                <g id="grpIntegration" class="group2" data-name="Group Integration">
                     <rect onclick="openInfo(event)" onanimationend="onRectAnimationEnd(event)"
-                        class="rectOkoIntegration-base" width="1em" height="38" rx="6" />
+                        class="rectIntegration-base" width="1em" height="38" rx="6" />
                     <text transform="translate(15 26)"
                         style="font-size: 20px; font-family: SuisseIntl-SemiBold; pointer-events: none; fill: #243861">Second
                         Title</text>
                 </g>
 
-                <g id="Ellipse_OkoIntegration" data-name="Ellipse OkoIntegration" class="ellips_2">
+                <g id="Ellipse_Integration" data-name="Ellipse Integration" class="ellips_2">
                     <circle cx="310" cy="400" r="148" />
                 </g>
 
-                <g id="grpOkoBasic" class="group3" data-name="Group OkoBasic">
+                <g id="grpBasic" class="group3" data-name="Group Basic">
                     <rect onanimationend="onRectAnimationEnd(event)" class="label3" onclick="openInfo(event)"
                         width="1em" height="38" rx="6" />
                     <text transform="translate(16 27)"
@@ -48,15 +48,15 @@
                 </g>
 
 
-                <g id="Ellipse_OkoBasic" data-name="Ellipse OkoBasic" class="ellips_2">
+                <g id="Ellipse_Basic" data-name="Ellipse Basic" class="ellips_2">
                     <circle class="ellips_1" cx="310" cy="400" r="68" />
                 </g>
 
                 <g id="Path_1432" data-name="Path 1432" transform="translate(310 392)">
                     <text
                         style="font-size: 20px; font-family: SuisseIntl-SemiBold; pointer-events: none; fill: #5DA7E5; text-anchor: middle; dominant-baseline: middle">
-                        <tspan x="0" dy="0">Proffix</tspan>
-                        <tspan x="0" dy="20">Px5</tspan>
+                        <tspan x="0" dy="0">Corporate</tspan>
+                        <tspan x="0" dy="20">Logo</tspan>
                     </text>
                 </g>
             </svg>
@@ -65,11 +65,11 @@
 
         <div style="flex: 1; width: 0;">
             <div style="display: flex;">
-                <div id="descOkoBasic" class="desc"
+                <div id="descBasic" class="desc"
                     style="width: 100%; background-color: #5DA7E5; color: white; padding: 20px; visibility: hidden; margin: 70 70 70 0; border-radius: 6px">
-                    <img src="close_icon.svg" onclick="closeInfo(true, grpOkoBasic)" alt="close">
+                    <img src="close_icon.svg" onclick="closeInfo(true, grpBasic)" alt="close">
                     <div onanimationend="onTextAnimationEnd(event)" style="opacity: 0; padding: 20px">
-                        <p style="font-family: SuisseIntl-Book; font-size: 24px; ">OkoBasic
+                        <p style="font-family: SuisseIntl-Book; font-size: 24px; ">Third Title
                             <br />Hier kommt noch Text hin
                         </p>
                         <p style="font-family: SuisseIntl-Regular; font-size: 20px;">Lorem ipsum dolor sit amet,
@@ -82,11 +82,11 @@
                             ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. </p>
                     </div>
                 </div>
-                <div id="descOkoIntegration" class="desc"
+                <div id="descIntegration" class="desc"
                     style="width: 100%; margin-left: -100% !important; background-color: white; color: #243861; padding: 20px; visibility: hidden; margin: 70 70 70 0; border-radius: 6px">
-                    <img src="close_icon_blue.svg" onclick="closeInfo(true, grpOkoIntegration)" alt="close">
+                    <img src="close_icon_blue.svg" onclick="closeInfo(true, grpIntegration)" alt="close">
                     <div onanimationend="onTextAnimationEnd(event)" style="opacity: 0; padding: 20px">
-                        <p style="font-family: SuisseIntl-Book; font-size: 24px; ">OkoIntegration
+                        <p style="font-family: SuisseIntl-Book; font-size: 24px; ">Second Title
                             <br />Hier kommt noch Text hin
                         </p>
                         <p style="font-family: SuisseIntl-Regular; font-size: 20px;">Lorem ipsum dolor sit amet,
@@ -99,11 +99,11 @@
                             ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. </p>
                     </div>
                 </div>
-                <div id="descOkoSolution" class="desc"
+                <div id="descSolution" class="desc"
                     style="width: 100%; margin-left: -100% !important; background-color: #F07A66; color: white; padding: 20px; visibility: hidden; margin: 70 70 70 0; border-radius: 6px">
-                    <img src="close_icon.svg" onclick="closeInfo(true, grpOkoSolution)" alt="close">
+                    <img src="close_icon.svg" onclick="closeInfo(true, grpSolution)" alt="close">
                     <div onanimationend="onTextAnimationEnd(event)" style="opacity: 0; padding: 20px">
-                        <p style="font-family: SuisseIntl-Book; font-size: 24px; ">OkoSolution
+                        <p style="font-family: SuisseIntl-Book; font-size: 24px; ">First Title
                             <br />Hier kommt noch Text hin
                         </p>
                         <p style="font-family: SuisseIntl-Regular; font-size: 20px;">Lorem ipsum dolor sit amet,
